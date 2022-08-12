@@ -1,6 +1,6 @@
 import React from "react";
 import "./UsersList.css";
-import UserItem  from "./UserItem";
+import UserItem from "./UserItem";
 
 const UsersList = (props) => {
   if (props.items.length === 0) {
@@ -14,9 +14,8 @@ const UsersList = (props) => {
     <ul className="users-list">
       {props.items.map((user) => {
         return (
-          <li>
+          <li key={user.id}>
             <UserItem
-              key={user.id}
               id={user.id}
               image={user.image}
               name={user.name}
