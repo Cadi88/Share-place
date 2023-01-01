@@ -12,8 +12,8 @@ const PLACES = [
     address: "20 W 34th St., New York, NY 10001, United States",
     creator: "u1",
     location: {
-      lat: "40.7484445",
-      lng: "-73.9878531",
+      lat: 40.7484445,
+      lng: -73.9878531,
     },
   },
   {
