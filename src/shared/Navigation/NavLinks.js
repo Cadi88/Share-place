@@ -1,12 +1,14 @@
 import React from "react";
-import './NavLinks.css'
+import "./NavLinks.css";
 import { NavLink } from "react-router-dom";
 
 const NavLinks = () => {
   return (
     <ul className="nav-links">
       <li>
-        <NavLink to="/">All users</NavLink>
+        <NavLink exact={true} to="/">
+          All users
+        </NavLink>
       </li>
       <li>
         <NavLink to="/u1/places">My places</NavLink>
